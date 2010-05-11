@@ -5,7 +5,12 @@
 @import include/views/static.sass
 
 html
+  :background transparent url('/images/effect/dshadow_1x100.png') repeat-x scroll 0 0
+
+body
   :background transparent url('/images/bg/paper.jpg') repeat scroll 0 0
   
-body
+#content
+  +clear-fix
   +grid-container
+  

@@ -1,6 +1,6 @@
 //horizontally center an element without needing to give it a width
 //see button for an example of this      
-=horiz_center
+=horiz-center
   :display table
   :margin 0px auto
 
@@ -12,9 +12,18 @@
   > *
     :*display inline
     :zoom 1
+  
+=clear-fix
+  &:after
+    :content "."
+    :display block
+    :height 0
+    :clear both
+    :visibility hidden
+    :zoom 1
 
 .button
-  +horiz_center
+  +horiz-center
 
   a
     :display table-cell
