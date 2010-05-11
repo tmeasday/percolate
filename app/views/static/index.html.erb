@@ -8,11 +8,15 @@
   </p>
   
   <div class="button">
+    <!-- the space in this link is to work around an IE7 bug -->
     <%= mail_to 'us@percolatestdio.com', 
                 image_tag('text/join_us_100x18.png', 
-                :alt => 'join us'), 
+                :alt => 'join us') + " ", 
                 :encode => 'javascript' %>
   </div>
   
 </div>
+
+
+
 

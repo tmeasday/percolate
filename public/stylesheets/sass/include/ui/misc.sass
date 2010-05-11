@@ -1,26 +1,29 @@
-// a image replaced tag, for use with Util::UiComponentHelper.replaced_tag
-.replaced
-  :text-indent -1337px
-  :overflow hidden
-  img
-    :float left
-
-.button
+//horizontally center an element without needing to give it a width
+//see button for an example of this      
+=horiz_center
   :display table
-  :*text-align center
   :margin 0px auto
+
+  //everything else here is a hack to get ie6 and ie7 working (http://www.icyte.com/saved/haslayout.net/171888)
+  :*text-align center
+
   *
     :*text-align left
+  > *
+    :*display inline
+    :zoom 1
+
+.button
+  +horiz_center
 
   a
     :display table-cell
-    :*display inline
-    :zoom 1
-    :vertical-align middle
     :height 50px
     :line-height 50px
+    :padding 0px 30px
+    :vertical-align middle
     :background-color #ccffff
-    :border 1px solid #eee
+    :border 1px solid #eee    
 
     &:hover
       :background-color #99ffff
@@ -29,5 +32,10 @@
       :background-color #ccc
       :border 1px solid #ccc
 
-    img
-      :margin 0px 30px 0px 30px
+// a image replaced tag, for use with Util::UiComponentHelper.replaced_tag
+.replaced
+  :text-indent -1337px
+  :overflow hidden
+  img
+    :float left
+
