@@ -1,0 +1,33 @@
+// a image replaced tag, for use with Util::UiComponentHelper.replaced_tag
+.replaced
+  :text-indent -1337px
+  :overflow hidden
+  img
+    :float left
+
+.button
+  :display table
+  :*text-align center
+  :margin 0px auto
+  *
+    :*text-align left
+
+  a
+    :display table-cell
+    :*display inline
+    :zoom 1
+    :vertical-align middle
+    :height 50px
+    :line-height 50px
+    :background-color #ccffff
+    :border 1px solid #eee
+
+    &:hover
+      :background-color #99ffff
+      :border 1px solid #ccc
+    &:active
+      :background-color #ccc
+      :border 1px solid #ccc
+
+    img
+      :margin 0px 30px 0px 30px

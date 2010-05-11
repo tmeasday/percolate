@@ -1,0 +1,18 @@
+<%= replaced_tag :h1, 'Percolate',  'logo/percolate_400x400.png', :id => 'logo' %>
+
+<div id="blurb">
+  <%= replaced_tag :h2, 'We craft the internet',  'text/tagline_craftinternet_460x26.png' %>
+  
+  <p>
+    It’s the feeling of making something great that keeps us going everyday. At Percolate Studio we’re committed to creating a more intuitive, elegant, and human internet. Simply: <em>we make the things that we love <span>&amp;</span> it shows.</em>
+  </p>
+  
+  <div class="button">
+    <%= mail_to 'us@percolatestdio.com', 
+                image_tag('text/join_us_100x18.png', 
+                :alt => 'join us'), 
+                :encode => 'javascript' %>
+  </div>
+  
+</div>
+

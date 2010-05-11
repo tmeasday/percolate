@@ -1,0 +1,99 @@
+/*
+Sass::SyntaxError: Undefined mixin 'inline_block'.
+on line 8 of /Users/joed/Code/gitroot/percolate/public/stylesheets/sass/include/ui/buttons.sass
+
+4: 
+5: =button(!img, !btn_height, !padding_x, !font_size, !letter_spacing = 1px)
+6:   :height = !btn_height
+7:   //we use inline-block here so you don't have to give the button a width
+8:   +inline_block
+9:   :cursor pointer
+10:   
+11:   &:hover
+12:     div
+13:       :background-position = "0 #{-1 * !btn_height}"
+14:     em
+
+
+Backtrace:
+/Users/joed/Code/gitroot/percolate/public/stylesheets/sass/include/ui/buttons.sass:8
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/mixin_node.rb:27:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:158:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/mixin_node.rb:45:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/mixin_node.rb:45:in `map'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/mixin_node.rb:45:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:158:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:202:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:202:in `map'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:202:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:193:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/rule_node.rb:160:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:181:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:158:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:202:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:202:in `map'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:202:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:193:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:181:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:158:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/tree/node.rb:103:in `render'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin.rb:97:in `update_stylesheet'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin.rb:83:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin.rb:78:in `each'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin.rb:78:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin.rb:76:in `each'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin.rb:76:in `update_stylesheets'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin.rb:63:in `check_for_updates'
+/Library/Ruby/Gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin/rails.rb:19:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/railz/application_spawner.rb:385:in `start_request_handler'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/railz/application_spawner.rb:343:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/railz/application_spawner.rb:341:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.8/bin/passenger-spawn-server:61
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: Undefined mixin 'inline_block'.\A on line 8 of /Users/joed/Code/gitroot/percolate/public/stylesheets/sass/include/ui/buttons.sass\A \A 4: \A 5: =button(!img, !btn_height, !padding_x, !font_size, !letter_spacing = 1px)\A 6:   :height = !btn_height\A 7:   //we use inline-block here so you don't have to give the button a width\A 8:   +inline_block\A 9:   :cursor pointer\A 10:   \A 11:   &:hover\A 12:     div\A 13:       :background-position = \"0 #{-1 * !btn_height}\"\A 14:     em\A "; }
